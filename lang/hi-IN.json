@@ -1,0 +1,100 @@
+{
+  "home": "Home",
+
+  "header_one": {
+    "skip": "Skip to main content",
+    "screen_reader": "Screen reader",
+    "lang": "English"
+  },
+  "primary_nav": {
+    "link_zero": "Home",
+    "link_one": "News & Events",
+    "link_two": "Letters & Circulars",
+    "link_three": "Tender",
+    "link_four": "Procurement",
+    "link_five": "ERP",
+    "link_five_items": {
+      "candidate_kyc": "Candidate KYC",
+      "nodal_officer_reg": "Nodal Officer Registration",
+      "erp_helpdesk_team": "ERP Helpdesk Team",
+      "customer_portal": "Customer Portal",
+      "undeployed_kyc": "Undeployed KYC"
+    },
+    "link_six": "Projects",
+    "link_seven": "Services",
+    "link_eight": "Gallery",
+    "current_tenders": "Current Tenders",
+    "archived_tenders": "Archived Tenders",
+    "rate_contract": "Rate Contract",
+    "eprocurement": "E-Procurement"
+  },
+  "pages": {
+    "publish_date": "Publish Date",
+    "search_placeholder": "Search in this table",
+    "table_msg_fetching": "Fetching data from server. Please wait...",
+    "no_data_to_show": "No Data to show,please refresh or come back again in sometime",
+
+    "newsevents": {
+      "newsevent_status": "News/Events Status",
+      "heading_newsevent_indexpage": "News & Events",
+      "heading_newsevent_details": "News & Events Details",
+      "heading_newsevent": "News Headline",
+      "heading_more_details": "More Details",
+      "heading_newsevent_documents": "News & Event Document",
+      "heading_newsevent_url": "News & Event URL"
+    },
+
+    "latest_updates": "Latest Updates",
+    "authorities_section": {
+      "designation_one": "Hon’ble Founder in Chief",
+      "designation_two": "Hon’ble Director",
+      "designation_three": "Managing Director AN Corp, Chennai"
+    },
+
+    "heading_tenders": "Tenders",
+    "heading_authorities": "Our esteemed heads and authorities",
+    "heading_news_event": "News & Events",
+    "heading_lnc": "Letters & Circulars",
+    "heading_about_ancorp": "About ancorp",
+    "heading_excellence": "Excellence",
+
+    "about_ancorp_one": "AN Corp is a premier engineering and construction company in the state of Telangana, dedicated to providing top-quality services to its clients and customers.",
+    "about_ancorp_two": "The State Government is committed to promote the state of Telangana as a hub for engineering and construction industries in the country.",
+    "about_ancorp_three": "AN Corp is a leading engineering and construction company in the state of Telangana. We specialize in building infrastructure, such as roads, bridges, and buildings, as well as providing services related to construction management and design.",
+    "about_ancorp_four": "To provide seamless and reliable engineering and construction services for the public and private sectors, thereby enhancing efficiency, safety, and sustainability of infrastructure.",
+    "about_ancorp_five": "To create a robust engineering and construction eco-system for enhancing competitiveness and productivity of the key economic sectors affecting the lives of the majority of the population of the state of Telangana.",
+
+    "heading_initiative": "OUR MISSION",
+    "heading_robust": "ROBUST ENGINEERING AND CONSTRUCTION ECO-SYSTEM",
+
+    "heading_projects_services": "Our Projects & Services",
+    "heading_projects": "OUR PROJECTS",
+    "projects_msg": " AN Corp has excelled in achieving great success on numerous engineering and construction projects",
+    "heading_services": "OUR SERVICES",
+    "services_msg": "AN Corp provides various services for its clients which range from engineering and construction management to design",
+
+    "heading_itc": "ENGINEERING CONSULTANCY",
+    "heading_manpower": "OUR MANPOWER SERVICES",
+    "heading_egov": "ENGINEERING AND CONSTRUCTION MANAGEMENT",
+
+    "heading_contact_us": "Contact Us",
+    "heading_back_to_top": "BACK TO TOP",
+    "heading_about_us": "About Us",
+    "heading_quick_access": "Quick Access",
+    "heading_external_links": "External Links",
+
+    "bid_closing_soon": "Bid is closing soon, hurry up only",
+    "days_left": " days left",
+    "bidding_closed": "Bidding is closed for this Tender",
+
+    "view_all_tenders": "View all Tenders published",
+    "no_new_tenders": "No new tenders published recently.",
+    "view_all_news_events": "View all News & Events published",
+    "view_all_lnc": "View all Letters & Circulars published",
+    "view_all_projects": "View all Projects published",
+    "view_all_services": "View all Services published",
+
+    "view_all_archived_tenders": "View all archived Tenders ",
+    "ancorp_address": "AN Corp, Jubilee Hills Rd, Jubilee Hills, Hyderabad, Telangana 500033"
+  }
+}
