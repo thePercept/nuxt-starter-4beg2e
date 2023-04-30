@@ -824,12 +824,12 @@
               <c-box class="address-row">
                 <c-box as="span" class="phone-spn" />
                 <p>
-                  <c-box as="a" href="tel:0612-2293035">
+                  <c-box as="a" href="tel:0115402046">
                     {{
                       mainData['ancorp_contact_details'][0]['phone_number_one']
                     }}
                   </c-box>
-                  &nbsp; , &nbsp;<c-box as="a" href="tel:0612-2281857"
+                  &nbsp; , &nbsp;<c-box as="a" href="tel:0115402046"
                     >{{
                       mainData['ancorp_contact_details'][0]['phone_number_two']
                     }}
@@ -1524,20 +1524,30 @@ export default {
 
   asyncData({ $config: { ROOT_URL }, $axios, error }) {
     return $axios
-      .get('https://mocki.io/v1/e0463ef7-7d98-4d80-94d8-84e238695738')
+      .get('https://mocki.io/v1/286a552f-5642-4844-bdf0-38c0450e3da2')
       .then((response) => {
+        console.log('Response is -->', response.data);
         return {
           mainData: response.data,
         };
       })
       .catch((e) => {
-        console.log('ERROR ??');
-        console.log(e);
+        // console.log("ERROR ??");
+        // console.log(e);
         error({
-          statusCode: '',
+          statusCode: e.response.status,
         });
       });
   },
+
+  // async asyncData({ params, $http }) {
+  //   const mainData = await $http.$get(
+  //     `https://mocki.io/v1/286a552f-5642-4844-bdf0-38c0450e3da2`
+  //   );
+  //   return {
+  //     mainData,
+  //   };
+  // },
 
   mounted() {},
   beforeDestroy() {
@@ -2144,9 +2154,9 @@ export default {
   },
 
   methods: {
-    ...mapActions({
-      setPersisitingData: 'setPersisitingData',
-    }),
+    // ...mapActions({
+    //   setPersisitingData: 'setPersisitingData',
+    // }),
     getFinalHeaderHeight() {
       if (process.client) {
         this.$nextTick(() => {

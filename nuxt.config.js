@@ -90,10 +90,10 @@ export default {
   },
 
   publicRuntimeConfig: {
-    ROOT_URL:
-      process.env.NODE_ENV === 'production'
-        ? 'http://47.243.235.25/api'
-        : 'http://47.243.235.25/api',
+    // ROOT_URL:
+    //   process.env.NODE_ENV === 'production'
+    //     ? 'http://47.243.235.25/api'
+    //     : 'http://47.243.235.25/api',
   },
   privateRuntimeConfig: {},
 
