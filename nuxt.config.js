@@ -144,7 +144,7 @@ export default {
   ],
 
   sitemap: {
-    hostname: 'https://bsedc.bihar.gov.in',
+    hostname: 'https://ancorp.com',
     gzip: true,
     exclude: ['/loading'],
   },
