@@ -25,7 +25,7 @@
           >
             <vue-good-table
               :columns="this.columns"
-              :rows="this.rows.results"
+              :rows="rows.results"
               class="datatable-cls"
               :theme="colorMode == 'light' ? 'polar-bear' : 'nocturnal'"
               :key="new Date().getMilliseconds()"

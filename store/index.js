@@ -27,7 +27,7 @@ export const actions = {
     // console.dir(this.state)
     this.state.productionMode == true
       ? commit('changeRootUrl', 'http://47.243.235.25/api/')
-      : commit('changeRootUrl', 'http://localhost:3030/api/');
+      : commit('changeRootUrl', 'http://47.243.235.25/api/');
 
     // const data  = await this.$axios.get(this.state.rootUrl+'/api/home/')
 
