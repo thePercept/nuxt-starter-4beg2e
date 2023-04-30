@@ -4,7 +4,7 @@ Dear Developers of this channel & and anyone reading this, I am sharing the prob
 
 Firstly, I am new on stack blitz and somehow this project here is not loading the homepage initially, so one has to start with the url mentioned below:
 
-\*\*/news-and events
+/news-and events
 
 a.)After that, to recreate the memory leeak issue, you have to go back and forth on News & Events and then to Home and vice-versa.
 b.)You can try toggle the Tender droop down on the navbar and then navigate to news and events
@@ -18,9 +18,12 @@ I will attach some screenshots via an external link below for the recreated webs
 
 On Stackblitz
 
+(Link to the album containing all 5 screenshots)['https://ibb.co/album/CbQVVh']
+
 (Screenshot 1)['https://ibb.co/b7NTjZj']
 (Screenshot 2)['https://ibb.co/Z6fdFFq']
 (Screenshot 3)['https://ibb.co/s9h2cH8']
+(Screenshot 4)['https://ibb.co/mDvqrPx']
 
 I look forward for help from you all and wish to resolve this issue.
 
