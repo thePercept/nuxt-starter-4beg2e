@@ -93,7 +93,7 @@ export default {
     ROOT_URL:
       process.env.NODE_ENV === 'production'
         ? 'http://47.243.235.25/api'
-        : 'http://127.0.0.1:3030/api',
+        : 'http://47.243.235.25/api',
   },
   privateRuntimeConfig: {},
 

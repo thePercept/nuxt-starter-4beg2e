@@ -970,6 +970,8 @@ export default {
     return $axios
       .get(ROOT_URL + '/home')
       .then((response) => {
+        alert('Response...');
+        console.log('Response is::', response);
         return {
           mainData: response.data,
         };
