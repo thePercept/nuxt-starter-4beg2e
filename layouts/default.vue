@@ -129,7 +129,6 @@ export default {
     CBox,
     CText,
     siteHeader,
-    siteFooter,
     CIconButton,
     CIcon,
     CDivider,
