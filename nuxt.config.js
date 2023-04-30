@@ -58,7 +58,7 @@ export default {
   crawler: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'bsedc_website_sourcecode',
+    title: 'website_sourcecode',
     htmlAttrs: {
       lang: 'en',
     },
