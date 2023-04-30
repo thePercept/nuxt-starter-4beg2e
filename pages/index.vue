@@ -968,7 +968,7 @@ export default {
 
   asyncData({ $config: { ROOT_URL }, $axios, error }) {
     return $axios
-      .get(ROOT_URL + '/home')
+      .get('http://47.243.235.25/api/home')
       .then((response) => {
         alert('Response...');
         console.log('Response is::', response);
@@ -977,8 +977,8 @@ export default {
         };
       })
       .catch((e) => {
-        // console.log("ERROR ??");
-        // console.log(e);
+        console.log('ERROR ??');
+        console.log(e);
         error({
           statusCode: e.response.status,
         });
