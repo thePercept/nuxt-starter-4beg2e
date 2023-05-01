@@ -1,4 +1,4 @@
-## Memory leak deomonstartions
+## Memory leak demonstrations
 
 Dear Developers of this channel & and anyone reading this, I am sharing the problems faced while working on a project. I've tried to recreate the possible memory leak issue. To present here and give an idea of these kinds of problems, I have removed few pages which from the navigation menu in the navbar.
 
