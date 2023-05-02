@@ -30,7 +30,7 @@ export default {
   // components: true,
 
   server: {
-    port: 3000,
+    port: 3001,
     // host: '0'
   },
 
@@ -90,10 +90,10 @@ export default {
   },
 
   publicRuntimeConfig: {
-    // ROOT_URL:
-    //   process.env.NODE_ENV === 'production'
-    //     ? 'http://47.243.235.25/api'
-    //     : 'http://47.243.235.25/api',
+    ROOT_URL:
+      process.env.NODE_ENV === 'production'
+        ? 'http://47.243.235.25/api'
+        : 'http://47.243.235.25/api',
   },
   privateRuntimeConfig: {},
 
@@ -102,7 +102,7 @@ export default {
   },
 
   router: {
-    middleware: 'scrollBehavior',
+    // middleware: 'scrollBehavior',
     // prefetchLinks: false
   },
 

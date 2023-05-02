@@ -13,23 +13,9 @@
   </div>
 </template>
 <script>
-import {
-  CThemeProvider,
-  CColorModeProvider,
-  CReset,
-  CBox,
-  CText,
-  CIconButton,
-  CIcon,
-  CDivider,
-  CImage,
-  CHeading,
-  CPseudoBox,
-} from '@chakra-ui/vue';
 
 import siteHeader from '../components/siteHeader.vue';
 
-import { mapActions, mapState } from 'vuex';
 
 export default {
   name: 'App',
@@ -59,29 +45,13 @@ export default {
 
   mounted() {
     this.showHideSpinner = false;
-    //
-    this.setInnerWidth(window.innerWidth);
-    this.setInnerHeight(window.innerHeight);
-
-    this.onResize();
-
-    this.$nextTick(() => {
-      window.addEventListener('resize', this.onResize);
-
-      // alert("here")
-    });
   },
 
   computed: {
-    ...mapState({
-      innerWidth: 'innerWidth',
-      innerHeight: 'innerHeight',
-      widthName: 'widthName',
-    }),
+
   },
 
   beforeDestroy() {
-    window.removeEventListener('resize', this.onResize);
   },
 
   data() {
@@ -91,50 +61,13 @@ export default {
   },
 
   methods: {
-    onResize() {
-      this.setInnerWidth(window.innerWidth);
-      this.setInnerHeight(window.innerHeight);
 
-      let newWidth = window.innerWidth;
 
-      // TODO : These breakpoints are still in test and are subject to change and will change depending on the final design--
-      // alert(newWidth)
-      newWidth > 320 && newWidth < 576
-        ? this.setWidthName('sm')
-        : newWidth > 576 && newWidth < 768
-        ? this.setWidthName('md')
-        : newWidth > 768 && newWidth < 992
-        ? this.setWidthName('lg')
-        : newWidth > 992 && newWidth < 1200
-        ? this.setWidthName('xl')
-        : newWidth > 1200 && newWidth < 3000
-        ? this.setWidthName('xxl')
-        : this.setWidthName('tv');
 
-      // this.windowHeight = window.innerHeight;
-      // this.windowWidth = window.innerWidth;
-    },
-
-    ...mapActions({
-      setInnerWidth: 'setInnerWidth',
-      setInnerHeight: 'setInnerHeight',
-      setWidthName: 'setWidthName',
-    }),
   },
 
   components: {
-    CThemeProvider,
-    CColorModeProvider,
-    CReset,
-    CBox,
-    CText,
-    siteHeader,
-    CIconButton,
-    CIcon,
-    CDivider,
-    CImage,
-    CHeading,
-    CPseudoBox,
+    siteHeader
   },
 };
 </script>

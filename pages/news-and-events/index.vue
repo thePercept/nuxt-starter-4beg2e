@@ -1,132 +1,26 @@
 <template>
-  <c-box>
-    <c-box class="container">
-      <c-box class="simplecard-ui">
-        <c-box class="card-body pd-1" v-bind="mainStylesTwo[colorMode]">
-          <c-box class="page-breadcrumb-container plr-4">
-            <c-box> </c-box>
-          </c-box>
+  <div>
+    <div>
+      All removed from News and Events
+    </div>
+    <div>
+      {{ 
+        rows  
+      }}
+    </div>
+  </div>
 
-          <c-box
-            class="page-heading-container plr-4"
-            v-bind="mainStylesTwo[colorMode]"
-          >
-            <c-box>
-              <h3 class="mpw-preview-h2 mt-1 mb-1" style="display: inline-flex">
-                News & Events
-              </h3>
-            </c-box>
-          </c-box>
-
-          <c-box
-            class="pd-t-2 pd-b-2 plr-4 detail-view"
-            id=""
-            v-bind="mainStyles[colorMode]"
-          >
-            <vue-good-table
-              :columns="this.columns"
-              :rows="rows.results"
-              class="datatable-cls"
-              :theme="colorMode == 'light' ? 'polar-bear' : 'nocturnal'"
-              :key="new Date().getMilliseconds()"
-              :search-options="{
-                enabled: true,
-                skipDiacritics: true,
-                placeholder: `PLACEHOLDER`,
-              }"
-            >
-              <c-box slot="emptystate">
-                <p style="text-align: center" v-if="!getFetchingDataFromServer">
-                  No Data To Show
-                </p>
-                <c-box class="loading-table" v-if="getFetchingDataFromServer">
-                  <c-box
-                    class="loading-table-row fetching-table-data-p-container"
-                  >
-                    <p>Fetching from Server</p>
-                  </c-box>
-
-                  <c-box class="loading-table-row">
-                    <c-box class="line line-left loading-shimmer"></c-box>
-                    <c-box class="line line-mid loading-shimmer"></c-box>
-                    <c-box class="line line-right loading-shimmer"></c-box>
-                  </c-box>
-
-                  <c-box class="loading-table-row">
-                    <c-box class="line line-left loading-shimmer"></c-box>
-                    <c-box class="line line-mid loading-shimmer"></c-box>
-                    <c-box class="line line-right loading-shimmer"></c-box>
-                  </c-box>
-                </c-box>
-              </c-box>
-
-              <template slot="table-row" slot-scope="props">
-                <span v-if="props.column.field == 'sr_no'">
-                  {{ props.row.originalIndex + 1 }}
-                </span>
-
-                <span v-if="props.column.field == 'content_title'">
-                  <c-text
-                    d="inherit"
-                    class="item-p"
-                    pr="2rem"
-                    pt="1rem"
-                    pb="1rem"
-                    ><c-box
-                      as="nuxt-link"
-                      :to="'/news-and-events/' + props.row.slug"
-                      class="download-link"
-                    >
-                      {{ props.row.content_title_hi }}
-                    </c-box>
-                  </c-text>
-
-                  <c-badge
-                    pt="3px"
-                    mx="2"
-                    variant="solid"
-                    variant-color="red"
-                    v-if="props.row.new_status === 'is_new'"
-                    >NEW</c-badge
-                  >
-                </span>
-
-                <span v-if="props.column.field == 'status'">
-                  {{
-                    props.row.new_status == 'is_new'
-                      ? 'ACTIVE'
-                      : props.row.new_status == 'is_active'
-                      ? 'ACTIVE'
-                      : 'INACTIVE'
-                  }}
-                </span>
-
-                <span v-if="props.column.field == 'published_on'">
-                  {{ dateTime(props.row.created_at) }}
-                </span>
-              </template>
-            </vue-good-table>
-          </c-box>
-        </c-box>
-      </c-box>
-    </c-box>
-  </c-box>
 </template>
 <script>
-import moment from 'moment';
-import 'moment/locale/hi';
 
-import 'vue-good-table/dist/vue-good-table.css';
-import { VueGoodTable } from 'vue-good-table';
+
 
 export default {
   name: 'news-and-events-list',
 
-  inject: ['$chakraColorMode', '$toggleColorMode'],
   computed: {
-    getFetchingDataFromServer() {
-      return false;
-    },
+
+
     rows() {
       return {
         count: 3,
@@ -191,7 +85,8 @@ export default {
           },
         ],
       };
-    },
+    },    
+
 
     toggleColorMode() {
       return this.$toggleColorMode;
@@ -207,16 +102,9 @@ export default {
   },
 
   methods: {
-    dateTime(value) {
-      let x = '';
-      this.$i18n.locale == 'hi'
-        ? (x = moment(value).format('LLLL'))
-        : (x = this.$moment(value).format('LLLL'));
-      return x;
-    },
+
   },
   components: {
-    'vue-good-table': VueGoodTable,
   },
 
   data() {
@@ -289,7 +177,6 @@ export default {
   //       //
 
   //       return {
-  //         getFetchingDataFromServer: false,
   //         rows: response.data.results,
   //       };
   //     })
@@ -322,13 +209,6 @@ export default {
 </script>
 
 <style>
-.vgt-global-search__input {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.vgt-global-search__input input {
-  height: 2.5rem;
-}
 
 .item-p {
   font-weight: 401;
